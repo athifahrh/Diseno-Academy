@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Cart | Diseño Academy</title>
+  <link rel="shorcut icon" type="image" href="../IMG/Logo DA-01.png">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- LINK FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- LINK FONT -->
+
+  <!-- CDNJS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="all.min.js"></script>
+  <!-- CDNJS -->
+
+  <!-- STYLE CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"> -->
+  <!-- STYLE CSS -->
+
+  <!-- FOOTER -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+  <!-- FOOTER -->
+</head>
+
+<body>
+  <main>
+    <div class="big-wrapper light">
+      <!-- Awal Navigation Bar -->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="./index.html"><img src="../IMG/Logo 1.png" alt="Logo"></a>
+          </div>
+          <div class="navbar">
+            <ul>
+              <li><a href="#" class="link">Services</a></li>
+              <li><a href="#" class="link">Kelas</a></li>
+              <li><a href="#" class="link">Promo</a></li>
+              <li><a href="#" class="link">Mentor</a></li>
+              <li><a href="#" class="link">Review</a></li>
+            </ul>
+          </div>
+
+          <!-- <div class="icons">
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+          </div> -->
+          <div class="overlay"></div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="tombol">
+          <button class="toggle-btn">
+          </button>
+        </div>
+      </header>
+      <!-- Akhir Navigation Bar -->
+
+             <!-- PAYMENT -->
+      <div class="payment">
+        <div class="container">
+          <div class="title">Payment</div>
+          <div class="content">
+            <form action="cart.php" method="post">
+              <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="text" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Phone Number</span>
+                  <input type="text" name="phone" placeholder="Phone number" required>
+                </div>
+              </div>
+              <div class="class-details">
+                <input type="radio" name="class" value="1" id="dot-1">
+                <input type="radio" name="class" value="2" id="dot-2">
+                <input type="radio" name="class" value="3" id="dot-3">
+                <input type="radio" name="class" value="4" id="dot-4">
+                <input type="radio" name="class" value="5" id="dot-5">
+                <input type="radio" name="class" value="6" id="dot-6">
+                <span class="class-title">Class</span>
+                <div class="category">
+                  <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="class">Photoshop</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="class">Illustrator</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="class">Premiere</span>
+                  </label>
+                  <label for="dot-4">
+                    <span class="dot four"></span>
+                    <span class="class">Lightroom</span>
+                  </label>
+                  <label for="dot-5">
+                    <span class="dot five"></span>
+                    <span class="class">After Effects</span>
+                  </label>
+                  <label for="dot-6">
+                    <span class="dot six"></span>
+                    <span class="class">InDesign</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="level-details">
+                <input type="radio" name="level" value="1" id="dot-7">
+                <input type="radio" name="level" value="2" id="dot-8">
+                <input type="radio" name="level" value="3" id="dot-9">
+                <span class="level-title">Level</span>
+                <div class="category">
+                  <label for="dot-7">
+                    <span class="dot seven"></span>
+                    <span class="level">1</span>
+                  </label>
+                  <label for="dot-8">
+                    <span class="dot eight"></span>
+                    <span class="level">2</span>
+                  </label>
+                  <label for="dot-9">
+                    <span class="dot nine"></span>
+                    <span class="level">3</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="payment-details">
+                <input type="radio" name="payment_method" value="1" id="dot-12">
+                <input type="radio" name="payment_method" value="2" id="dot-13">
+                <input type="radio" name="payment_method" value="3" id="dot-14">
+                <span class="payment-title">Payment</span>
+                <div class="category">
+                  <label for="dot-12">
+                    <span class="dot twelve"></span>
+                    <span class="payment">Mandiri</span>
+                  </label>
+                  <label for="dot-13">
+                    <span class="dot thirteen"></span>
+                    <span class="payment">Gopay</span>
+                  </label>
+                  <label for="dot-14">
+                    <span class="dot fourteen"></span>
+                    <span class="payment">Dana</span>
+                  </label>
+                </div>
+              </div>
+              <div class="button">
+                <input type="submit" name="submit" value="Checkout">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- PAYMENT -->
+
+
+      <footer>
+        <div class="container">
+          <div class="sec aboutus">
+            <div class="logo">
+              <a href="./index.html"><img src="../IMG/Logo 1.png" alt="Logo"></a>
+            </div>
+            <p>Diseño Academy adalah website yang menyediakan berbagai macam kelas desain seperti desain grafis visual identity, pemasaran, UI, website, publikasi, kemasan, hingga motion graphic design dengan menggunakan berbagai aplikasi seperti Adobe Photoshop, Illustrator, Premiere, InDesign, CorelDraw, Inkscape, dll</p>
+
+            <ul class="sci">
+              <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fab fa-line" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="sec kelas">
+            <h2>Kelas</h2>
+            <ul>
+              <li><a href="#">Photoshop</a></li>
+              <li><a href="#">Illustrator</a></li>
+              <li><a href="#">Premiere</a></li>
+              <li><a href="#">Lightroom</a></li>
+              <li><a href="#">After Effects</a></li>
+              <li><a href="#">InDesign</a></li>
+            </ul>
+          </div>
+
+          <div class="sec about">
+            <h2>About Us</h2>
+            <ul>
+              <li><a href="./about.html" target="_blank">About</a></li>
+              <li><a href="./FAQ.html" target="_blank">FAQ</a></li>
+              <li><a href="./ContactUs.html" target="_blank">Contact Us</a></li>
+              <li><a href="./OurTeams.html" target="_blank">Our Teams</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+
+      <div class="copyrightText">
+        <p>Copyright © 2021 Diseno Academy. All Rights Reserved.</p>
+      </div>
+      <!-- <div class="test">
+          <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi magnam quisquam consequatur sequi adipisci neque. Officia natus voluptatibus dolorem repudiandae aspernatur sapiente quam possimus beatae placeat quibusdam ad ducimus distinctio molestias esse tempora magnam, dicta atque laudantium velit odit eos. Quaerat, neque? Rem ratione expedita non molestias aperiam. Minus?</p>
+          </div>
+        </div> -->
+
+    </div>
+  </main>
+
+
+  <!-- Lord Icon -->
+  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+
+
+  <!-- SCRIPT JS -->
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <!-- SCRIPT JS -->
+
+  <!-- ICON -->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <!-- ICON -->
+
+</body>
+
+</html>
+        
+        

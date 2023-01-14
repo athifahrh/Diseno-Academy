@@ -1,0 +1,7 @@
+{
+    "editor.fontSize": 16,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "liveServer.settings.port": 5502,
+}
